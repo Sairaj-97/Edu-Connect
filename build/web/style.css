@@ -1,0 +1,321 @@
+*{
+    margin: 0; padding:0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+/*     background: linear-gradient(57deg, #87CEFA,#ffffff); */
+background: linear-gradient(#ffffff,#64b3f4); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.site-header {
+    width: 100%;
+    height: 100vh;
+/*    background: linear-gradient(57deg, #87CEFA,#ffffff); */
+/*    clip-path: polygon(0% 0%, 100% 0%, 100% %, 0% 100%);*/
+}
+
+
+nav{
+    width: 100%; height: 100px;
+    display: flex; color: white;
+    background-color: rgba(0,0,0,0.8);
+/*    background-color: yellow;*/
+    
+}
+
+.logo{
+    width: 50%;
+    height: 100px;
+}
+
+.logo h1{
+    line-height: 100px;
+    padding-left: 28px;
+    font-size: 30px;
+}
+
+.menu{
+    width: 50%; height: 100px;
+}
+
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 8px;
+}
+.menu ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+section{ display: flex;  }
+
+.leftside { width: 45%; height: auto; overflow: hidden; margin-top: 20px;}
+
+.leftside img{  width: 600px;  height: 500px; }
+
+.rightside{ width: 55%; height: 300px; color: black; text-align: center; margin-top: 80px; 
+           padding: 40px;  }
+
+.rightsidetab{
+    width: 55%; 
+    height: 300px; 
+    text-align: center; 
+    margin-top: 80px; 
+    padding: 40px;  
+}
+
+
+.rightside h1{ text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase; } 
+
+.rightside p {  
+    font-size: 1.1rem; padding: 30px 0; }
+
+.centercontainer { 
+  height: 200px;
+  position: relative;
+  top: 100px;
+}
+
+.centertab {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+
+.homebuttons{   font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+    margin: 10px; 
+}
+
+
+
+.homebuttons:hover{
+      background: linear-gradient(57deg, #1E4D92, #00C6A7 );   
+}
+
+
+
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.wrapper{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  position:relative;
+  left: 200px;
+  top:-70px;
+}
+
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height:60px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(57deg,#4158d0, #87CEEB);
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+form .content label{
+  color: #262626;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(57deg,#4158d0, #87CEEB);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.updatePassForm{
+    margin-left: 23%;
+}
+.centreAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.formcentre{
+    margin-left: 23%;
+}
+.ahover a:hover{
+    color: white;
+    background-color: black;
+    
+}
+.ahover a{
+    font-weight:900;
+}
+.ques{
+    border:2px solid black;
+    width: 800px;
+    background-color: rgba(0,0,0,0.6);
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    padding: 5px;
+}
+.ques th{
+    background-color: white;
+    
+}
+.ques td{
+    font-weight: 500;
+    font-size: 23px;
+    
+}
+.sbbtn{
+    width: 150px;
+    height: 50px;
+    margin-left: 45%;
+    font-size: 20px;
+    border:2px solid black;
+    transition-duration: 0.5s;
+}
+.sbbtn:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.ques label{
+    font-size: 25px;
+    color: red;
+}
+.qhead{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.outer{
+    
+    
+}
+.inner{
+    
+}

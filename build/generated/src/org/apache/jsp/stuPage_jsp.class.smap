@@ -1,0 +1,19 @@
+SMAP
+stuPage_jsp.java
+JSP
+*S JSP
+*F
++ 0 stuPage.jsp
+stuPage.jsp
++ 1 security.jsp
+security.jsp
+*L
+1:49
+2#1,12:51
+13:63
+2#0:64
+3:65,2
+4,25:67
+29:92,3
+30,17:95
+*E
